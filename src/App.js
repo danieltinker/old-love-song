@@ -14,8 +14,10 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-
+  
+  reveal();
+  
+  // check the scroll position on page load
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -31,24 +33,21 @@ function App() {
     }
   }
 
-  const paddingTop = {
-    paddingTop:'120px',
-  };
+  const paddingTop = {paddingTop:'120px'};
 
-  // window.addEventListener("scroll", reveal);
-  // check the scroll position on page load
-  reveal();
 
   return (
     <div className="App" style={gradient_arr[Math.floor(scrollPosition/1000)]}>
       <header className="App-header">
         <h1 style={{paddingTop:window.innerHeight/2}} className='poem animated animatedFadeInUp fadeInUp reveal' >שירי אהבה ישנים</h1>
         <div className="poem-feed">
-
             {poem_arr.map((poem,poem_idx) =>(
                 <div className='reveal' style={poem_idx!==0?paddingTop:{}}>
-                  {poem.split("\n\n").map((house) => (
-                    house.split("\n").map((line) =>(line? <p className='reveal'>{line}<br/></p> : <br/>))
+                  {
+                  poem.split("\n\n").map((house) => (
+                      house.split("\n").map((line) =>(
+                        line? <p className='reveal'>{line}<br/></p> : <br/>
+                        ))
                   ))}
                 </div>
             ))}

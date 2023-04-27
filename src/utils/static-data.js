@@ -1,4 +1,4 @@
-export const POEM_NO_1 = `
+const POEM_NO_1 = `
 אלוהים שולח לי מלאך
 להבות הלילה בוהקות
 \n
@@ -15,7 +15,7 @@ export const POEM_NO_1 = `
 וזה כואב
 `
 
-export const POEM_NO_2=`
+const POEM_NO_2=`
 לוגם מיץ ענבים משכר
 דרך כוס זכוכית מושלמת
 \n
@@ -29,7 +29,7 @@ export const POEM_NO_2=`
 זכויות מתנפצות כמו יהלומים ושקיעה במי ים כחולים
 `
 
-export const POEM_NO_3=`
+const POEM_NO_3=`
 משפטים של איינשטיין פותחים לי את המחשבה 
 הניחוח של גופף המיוזע פותח לי את הדימיון
 \n
@@ -42,7 +42,7 @@ export const POEM_NO_3=`
 מילים אקראיות ממשיכות את עצמן לשיר
 ליטוף גופך מלחין את האווירה
 `
-export const POEM_NO_4=`
+const POEM_NO_4=`
 אתה יודע כשזה זה
 כשההודעות לא מפסיקות להגיע
 \n
@@ -55,7 +55,7 @@ export const POEM_NO_4=`
 בבוקר אחד מעונן
 ספרנו כבשים בשמיים
 `
-export const POEM_NO_5=`
+const POEM_NO_5=`
 לא זוכר מה באתי לכתוב
 תוהה למי זה ישנה
 \n
@@ -65,7 +65,7 @@ export const POEM_NO_5=`
 אני מייצר מחשבות ואותם נותן לך במתנה
 בתקווה שתתרגשי תצחקי או תלמדי משו חדש 
 `
-export const POEM_NO_6=`
+const POEM_NO_6=`
 כל הניירות במגירות בבית של ההורים
 אלפי מכתבים כבר אינם בעצמי זרקתי אותם
 \n
@@ -78,7 +78,7 @@ export const POEM_NO_6=`
 גוסס תוקפני ומפוחד 
 מצייר ציורי שמן ערום
 `
-export const POEM_NO_7=`
+const POEM_NO_7=`
 אני יכול לכתוב אלף מכתבים בדקה
 אני יכול לאהוב אלפי נשים בשבריר שנייה
 \n
@@ -91,7 +91,7 @@ export const POEM_NO_7=`
 מחלק את עצמי לכל המעוניינת 
 השארת אינסוף אהבה ברחוב
 `
-export const POEM_NO_8=`
+const POEM_NO_8=`
 אם היינו מדברים שוב 
 האם היית אוהבת אותי
 \n
@@ -104,7 +104,7 @@ export const POEM_NO_8=`
 רוצה אותך
 אוהב לדעת
 `
-export const POEM_NO_9=`
+const POEM_NO_9=`
 לאן היית הולכת אם היית יכולה ללכת לכל מקום
 מה היית עושה את מי היית נושמת
 \n
@@ -117,7 +117,7 @@ export const POEM_NO_9=`
 אל תברח דבר בשפה גבוה
 אל תברח דבר יפה ונאות
 `
-export const POEM_NO_10=`
+const POEM_NO_10=`
 בשבילך אני מנסה לא לפחד
 בשבילך אני מציג אומץ
 \n
@@ -130,7 +130,7 @@ export const POEM_NO_10=`
 אין פואנטה למי שלא מבין עניין
 אין פואנטה גם למי שמבין
 `
-export const POEM_NO_11=`
+const POEM_NO_11=`
 חיכיתי לך ליד העץ
 העץ הישן איפה שחגננו רבנו ובכינו
 \n
@@ -145,3 +145,22 @@ export const POEM_NO_11=`
 `
 
 export const poem_arr = [POEM_NO_1,POEM_NO_2,POEM_NO_3,POEM_NO_4,POEM_NO_5,POEM_NO_6,POEM_NO_7,POEM_NO_8,POEM_NO_9,POEM_NO_10,POEM_NO_11]
+
+
+const gradientStyle = {
+    background: 'linear-gradient(to bottom, #FFF8DC 0%, #FFFACD 100%)'
+  };
+const gradientStyle2 = {
+    background: 'linear-gradient(to bottom, #FFFACD 0%, #FFEFD5 100%)'
+  };
+const gradientStyle3 = {
+    background: 'linear-gradient(to bottom, #FFEFD5 0%, #FFE4B5 100%)'
+  };
+const gradientStyle4 = {
+    background: 'linear-gradient(to bottom, #FFE4B5 0%, #FFDAB9 100%)'
+  };
+const gradientStyle5 = {
+    background: 'linear-gradient(to bottom, #FFFAF0 0%, #FFFFF0 100%)'
+  };
+
+  export const gradient_arr = [gradientStyle,gradientStyle2,gradientStyle3,gradientStyle4,gradientStyle5]

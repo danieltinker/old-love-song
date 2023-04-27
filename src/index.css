@@ -1,13 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@100&family=Open+Sans:wght@300&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    /* font-family: 'Noto Serif Hebrew', serif;
+    font-family: 'Open Sans', sans-serif; */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: 'Noto Serif Hebrew', serif;
+font-family: 'Open Sans', sans-serif; */
+
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+}
+
+
+@font-face {
+  font-family: 'Noto';
+  src: url('./fonts/NotoSerifHebrew-VariableFont_wdth,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.my-text {
+  font-family: 'Noto', sans-serif;
 }
